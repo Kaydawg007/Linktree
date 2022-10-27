@@ -48,8 +48,8 @@ const Links = () => {
         ))}
       </ul>
       <div className={classes.Logo}>
-        <img src={slackLogo} alt="Slack Logo" />
-        <a href="https://github.com/kaydawg007"><img src={githubLogo} alt="Github Logo" /></a>
+        <a href="https://slack.com" target="_blank"><img src={slackLogo} alt="Slack Logo" /></a>
+        <a href="https://github.com/kaydawg007" target="_blank"><img src={githubLogo} alt="Github Logo" /></a>
       </div>
     </React.Fragment>
   );

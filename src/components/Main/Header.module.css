@@ -1,0 +1,69 @@
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.profile__img {
+  border-radius: 120px;
+  width: 90px;
+  height: 90px;
+}
+
+.profileName {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.shareBtn {
+  position: absolute;
+  left: 75%;
+  top: 40px;
+  cursor: pointer;
+}
+
+.shareBtnHoverState {
+  position: absolute;
+  left: 75%;
+  top: 40px;
+  cursor: pointer;
+}
+
+.shareBtn:hover {
+  display: none;
+}
+
+.mobileShareBtn {
+  display: none;
+  position: absolute;
+  left: 75%;
+  top: 40px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.mobileShareBtnPressed {
+  display: none;
+  position: absolute;
+  left: 75%;
+  top: 40px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .mobileShareBtn {
+    display: block;
+  }
+
+  .mobileShareBtnPressed {
+    display: block;
+  }
+
+  .mobileShareBtn:hover {
+    display: none;
+  }
+}

@@ -77,7 +77,7 @@ const Login = () => {
     if (event.target.value.trim().length === 0) {
       console.log(true);
       setMessageHandler(true);
-      setErrorMessage("Please enter an error message");
+      setErrorMessage("Please enter a message");
     } else {
       setMessageHandler(false);
       setErrorMessage("");

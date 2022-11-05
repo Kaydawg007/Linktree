@@ -12,11 +12,11 @@ const ErrorPage = () => {
       </p>
 
       <div className={classes.btnBox}>
-        <span onClick={back}>
+        
           <a href="/Contact" className={classes.backButton}>
             <img src={Arrow} alt="Left Arrow" /> <span>Go Back</span>
           </a>
-        </span>
+       
         <a href="/" className={classes.homeButton}>
           Take me home
         </a>

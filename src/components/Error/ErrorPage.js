@@ -3,7 +3,6 @@ import classes from "./ErrorPage.module.css";
 import Arrow from "../../Images/arrow-left.png";
 
 const ErrorPage = () => {
-  const back = history.back;
   return (
     <div className={classes.errorBox}>
       <p className={classes.errorCode}>404 error</p>
@@ -14,7 +13,7 @@ const ErrorPage = () => {
 
       <div className={classes.btnBox}>
         <span onClick={back}>
-          <a href="#" onClick={back} className={classes.backButton}>
+          <a href="/Contact" className={classes.backButton}>
             <img src={Arrow} alt="Left Arrow" /> <span>Go Back</span>
           </a>
         </span>

@@ -105,6 +105,7 @@ const Login = () => {
               className={`${classes.nameInputField} ${
                 validateNameHandler === true ? classes.invalid : null
               }`}
+              id="first_name"
               type="text"
               placeholder="Enter your first name"
             />
@@ -118,6 +119,7 @@ const Login = () => {
               }`}
               onChange={nameChangeHandler}
               type="text"
+              id="last_name"
               placeholder="Enter your last name"
             />
           </span>
@@ -130,6 +132,7 @@ const Login = () => {
             className={`${classes.mailInputField} ${
               validateEmailHandler === false ? classes.invalid : null
             }`}
+            id="email"
             type="email"
             placeholder="yourname@email.com"
           />
@@ -142,6 +145,7 @@ const Login = () => {
             className={`${classes.textArea} ${
               validateMessageHandler === true ? classes.invalid : null
             }`}
+            id="message"
             onChange={messageBoxChangeHandler}
             placeholder=" Send me a message and i'll reply you as soon as possible"
           ></textarea>
@@ -157,6 +161,7 @@ const Login = () => {
         </div>
         <button
           disabled={!formIsValid}
+          id="btn__submit"
           className={formIsValid ? classes.Valid : classes.Button}
         >
           Send Message

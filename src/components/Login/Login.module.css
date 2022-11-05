@@ -1,0 +1,207 @@
+.contactPageForm {
+  width: 75%;
+  margin: auto auto 100px auto;
+  text-align: left;
+}
+
+.contactPageForm > h2 {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #101828;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.ctd {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.nameInputFields {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nameInputFields > span {
+  width: 50%;
+}
+
+.nameInputFields > span > label {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+}
+
+.nameInputField {
+  outline: none;
+  width: 87%;
+  padding: 10px 14px;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.nameInputField:focus {
+  border: 1px solid #84caff;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.mailInputFields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.mailInputFields > label {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+}
+
+.mailInputField {
+  width: 94%;
+  padding: 10px 14px;
+  gap: 8px;
+  outline: none;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.mailInputField:focus {
+  border: 1px solid #84caff;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.messageBox {
+  width: 100%;
+}
+
+.messageBox > label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+}
+
+.textArea {
+  outline: none;
+  display: block;
+  min-width: 96%;
+  max-width: 96%;
+  min-height: 132px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.messageBox > textarea:focus {
+  border: 1px solid #84caff;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.checkBox {
+  display: flex;
+}
+
+.checkBox > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475467;
+}
+
+.Button {
+  background: #b2ddff;
+  border: 0px;
+  width: 100%;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.Valid {
+  background: #1570ef;
+  cursor: pointer;
+  border: 0px;
+  width: 100%;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.Valid:hover {
+  background: #175cd3;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
+}
+
+.invalid {
+  border: 1px solid #f89687;
+}
+
+.errorMessage {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f83f23;
+}
+
+@media screen and (max-width: 650px) {
+  .nameInputFields {
+    flex-direction: column;
+  }
+
+  .nameInputFields > span {
+    width: 100%;
+  }
+
+  .nameInputField {
+    width: 94%;
+  }
+}

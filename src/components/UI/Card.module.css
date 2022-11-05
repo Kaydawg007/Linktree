@@ -1,0 +1,21 @@
+.Card {
+  display: block;
+  background-color: #eaecf0;
+  padding: 15px 0;
+  width: 75%;
+  list-style-type: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.Card:hover {
+  background-color: #d0d5dd;
+}
+
+@media screen and (max-width: 750px) {
+  .Card {
+    width: 85%;
+    margin: auto;
+  }
+}

@@ -197,6 +197,10 @@
     flex-direction: column;
   }
 
+  .checkBox {
+   align-items: top;
+   }
+
   .nameInputFields > span {
     width: 100%;
     margin: 5px 0px;

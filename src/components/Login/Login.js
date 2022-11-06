@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   const nameChangeHandler = (event) => {
-    if (event.target.value.trim().length > 1) {
+    if (event.target.value.trim().length > 0) {
       setNameIsValid(true);
      
     }

@@ -131,6 +131,7 @@
 
 .checkBox {
   display: flex;
+  align-items: baseline;
 }
 
 .checkBox > p {
@@ -196,10 +197,6 @@
   .nameInputFields {
     flex-direction: column;
   }
-
-  .checkBox {
-   align-items: center;
-   }
 
   .nameInputFields > span {
     width: 100%;

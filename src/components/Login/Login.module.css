@@ -199,9 +199,14 @@
 
   .nameInputFields > span {
     width: 100%;
+    margin: 5px 0px;
   }
 
   .nameInputField {
     width: 94%;
+  }
+
+  .mailInputFied {
+   margin: 5px 0px;
   }
 }

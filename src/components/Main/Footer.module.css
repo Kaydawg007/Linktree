@@ -18,7 +18,7 @@
 @media screen and (max-width: 750px) {
   .Footer {
     flex-direction: column;
-    align-items: left;
+    align-items: baseline;
   }
 
   .Footer > p {

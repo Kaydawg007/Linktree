@@ -20,29 +20,34 @@ const Login = () => {
   const emailChangeHandler = (event) => {
     if (event.target.value.includes("@")) {
       setEmailIsValid(true);
-      console.log(emailIsValid);
+      
+    } 
+    
+    if (event.target.value.trim().length >= 1) {
+      setEmailErrorMessage("");
     }
   };
 
   const nameChangeHandler = (event) => {
     if (event.target.value.trim().length > 1) {
       setNameIsValid(true);
-      console.log(nameIsValid);
+     
     }
   };
 
   const checkBoxValidity = (event) => {
-    console.log(event.target.checked);
+   
     if (event.target.checked === true) {
       setCheckBoxIsValid(true);
-      console.log(checkBoxIsValid);
+      
     }
   };
 
   const messageBoxChangeHandler = (event) => {
-    if (event.target.value.trim().length > 1) {
+   if (event.target.value.trim().length >= 1) {
       setMessageBoxIsValid(true);
-      console.log(messageBoxIsValid);
+     
+      setErrorMessage("");
     }
   };
 
@@ -75,7 +80,7 @@ const Login = () => {
   const messageBoxValidatorHandler = (event) => {
     // console.log(event.target.value);
     if (event.target.value.trim().length === 0) {
-      console.log(true);
+     
       setMessageHandler(true);
       setErrorMessage("Please enter a message");
     } else {
